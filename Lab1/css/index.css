@@ -6,7 +6,7 @@
     background-color: rgb(0, 0, 0);
     color:white;
     text-decoration: none;
-    background-image: url(./img/black4.jpg), url(./img/star.jpg);
+    background-image: url(../img/black4.jpg), url(../img/star.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     
