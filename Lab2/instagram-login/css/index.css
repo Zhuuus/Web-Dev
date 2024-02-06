@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+ }
+.main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    max-width: 700px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+
+
+
+
+/* IMG BOX */
+.img-1 {
+    /* margin-top: 100px; */
+    width: 380px;
+    height: 490px;
+    background-image: url(../img/home-phones.png);
+    background-size: cover;
+    
+}
+.claider{
+    
+    
+    
+    overflow: hidden;  
+}
+.img-2{
+    
+   
+    /* background-image: url(../img/1.png); */
+    background-size: cover;
+    background-position: center;
+    /* margin-bottom: 50px; */
+    
+    position: relative;
+    left: 128px;
+    top: 17px;
+    animation: crossfade 10s infinite;
+    opacity: 0; /* Изначально скрываем все слайды */
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-2.active {
+    width: 205px;
+    height: 443px;
+    /* background-image: url(../img/1.png); */
+    background-size: cover;
+    background-position: center;
+    /* margin-bottom: 50px; */
+    
+    position: relative;
+    left: 128px;
+    top: 17px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+
+
+
+.login{
+    border: 1px solid rgb(219, 219, 219);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-around;
+
+    margin-bottom: 10px;
+    padding-top: 50px ;
+    width: 280px;
+    height: 350px;
+
+    
+    
+}
+
+.box{
+    display: block;
+   
+    width: 300px;
+}
+
+
+
+
+.box .input-Box{   
+    position: relative;
+}
+input{
+    width: 250px;
+    height: 20px;
+    padding: 20px 0px 7px 8px;
+
+    /* margin-top: 10px; */
+    border: 1px solid #ccc
+   
+
+}
+label {
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 8px;
+
+    display: flex;
+    align-items: center
+    
+}
+input, label {
+    font-size: 12px;
+    color: #6e6e6e;
+}
+
+input:focus + label {
+    top: -15px;
+    
+
+
+    color: #6e6e6e;
+    font-size: 10px;
+    pointer-events: none;
+    
+}
+
+button{
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    border-color:  rgba(0, 149, 246,0.6);
+    background-color: rgba(0, 149, 246,0.6);
+}
+
+
+
+.box .If-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+.Facebook{
+    margin-bottom: 10px;
+    
+}
+.forget{
+    color: black;
+    font-size: 12px;
+
+}
+
+
+
+.box .transition-Box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box .installing-App{
+    display: flex;
+    margin-top: 6px;
+   
+    justify-content:center ;
+    align-items: center;
+
+}
+.box .installing-App .Google{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    
+    
+    background-image: url(../img/2.png);
+    background-size: cover;
+    background-position: center;
+}
+.box .installing-App .Microsoft{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;  
+    
+    background-image: url(../img/3.png);
+    background-size: cover;
+    background-position: center;
+    
+    margin-right: 15px;
+}
+
+.box .transition-Line{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  
+}
+.or {
+    margin: 10px;
+}
+
+.register{
+    border: 1px solid rgb(219, 219, 219);
+    margin-top: 6px;
+    margin-bottom: 6px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 40px; 
+    font-size: 15px;
+}
+
+.footer {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(155, 155,155);
+}
+
+.footer-language select { 
+    padding: 5px;
+}
+
+.footer-copyright p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+
+
