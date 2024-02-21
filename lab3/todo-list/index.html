@@ -15,7 +15,7 @@
         cursor: pointer;
         position: relative;
         padding: 12px 8px 12px 40px;
-        background: #eee;
+        background: #ffffff;
         font-size: 18px;
         transition: 0.2s;
         -webkit-user-select: none;
@@ -37,7 +37,7 @@
       ul li.checked::before {
         content: '';
         position: absolute;
-        border-color: pink;
+        border-color: rgb(9, 8, 8);
         border-style: solid;
         border-width: 0 2px 2px 0;
         top: 10px;
@@ -60,7 +60,7 @@
       }
 
       .header {
-        background-color: pink;
+        background-color: rgb(2, 2, 2);
         padding: 10px 10px;
         color: white;
         text-align: center;
@@ -143,7 +143,15 @@
               ev.target.classList.toggle('checked');
             }
           }, false);
+
+
+
+
           //adding taskss
+
+
+
+
           function newElement() {
             var li = document.createElement("li");
             var inputValue = document.getElementById("myInput").value;
@@ -151,7 +159,15 @@
             li.appendChild(t);
             if (inputValue === '') {
               alert("empty lol");
-            } else {
+            
+            }
+            if (inputValue === 'error') {
+              alert("empty lol");
+            
+            }
+
+
+            else {
               document.getElementById("tasks").appendChild(li);
             }
             document.getElementById("myInput").value = "";
